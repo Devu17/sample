@@ -1,0 +1,25 @@
+<html>
+<head>
+  <body>
+    <input type="button" name="name" value="click" onclick="reverse()">
+    <input type="text" name="num">
+    <script type="text/javascript">
+function reverse()
+{
+
+
+  var num=  document.getElementsByName('num').value;
+  while (num!=0) {
+    VAR r= num % 10;
+    var result=num * 10 + r;
+    num= num / 10;
+
+  }
+  prompt('result');
+
+
+}
+
+    </script>
+    </body>
+    </html>

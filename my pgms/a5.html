@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pallindrome</title>
+    <script type="text/javascript">
+      function pali() {
+        var rev="";
+        var str=document.getElementById("1").value;
+        var l=str.length;
+        for (var i = l; i >=0; i--) {
+        rev+=str.charAt(i);
+        }
+        if ((str)==rev) {
+          console.log("pallindrome");
+
+        }
+        else {
+          console.log("not pallindrome");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="name" value="" id="1">
+    <input type="button" name="name" value="submit" onclick="pali()">
+  </body>
+</html>

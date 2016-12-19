@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>odd or even</title>
+    <script type="text/javascript">
+    function oe() {
+    var   n=document.getElementsByName("name").value;
+    n = parseInt(val)
+    /* if (val % 2) {
+        console.log("even");
+      }
+      else {
+        console.log("odd");
+      }-->
+    */
+    if (isNaN(n))
+    {
+    alert("Please Enter a Number");
+    }
+    else if (n == 0)
+    {
+    alert("The number is zero");
+    }
+    else if (n%2)
+    {
+    alert("The number is odd");
+    }
+    else
+    {
+    alert("The number is even");
+  }}
+    </script>
+  </head>
+  <body>
+    <input type="text" name="name" value="">
+    <input type="button" name="name" value="check" onclick="oe()">
+  </body>
+</html>
